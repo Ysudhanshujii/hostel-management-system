@@ -9,8 +9,10 @@ router.post("/admin-login", (req, res) => {
 
 
 const { username, password } = req.body;
-
-if (username === "Sudhanshu" && password === "Sujit@12") {
+if (
+    username === process.env.ADMIN_USERNAME &&
+    password === process.env.ADMIN_PASSWORD
+) {
 
     return res.json({
         success: true,
