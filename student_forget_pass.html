@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Student Portal</title>
+    <link rel="stylesheet" href="student_forget_pass.css"> </head>
+
+<body>
+
+   
+    
+    <main>
+      <form id="forgotForm" class="auth-form">
+            <fieldset>
+                <legend>Forgot Your Password</legend>
+                <p class="form-description">
+                     Enter your Scholar Number below and we will send a password reset link to your registered email address.
+                </p>
+
+                <div class="form-group">
+                    <label for="scholar-no">Scholar Number:</label>
+                    <input type="text" id="scholar-no" name="scholar-no" placeholder="XXXX ....." required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Send Reset Link">
+                </div>
+            </fieldset>
+            
+            <div class="form-footer">
+                <a href="sign_in.html">Back to Sign In</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="..js/common.js"></script>
+<script src="../js/forgot-password.js"></script>
+
+</body>
+</html>

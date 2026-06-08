@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Admin Portal</title>
+    <link rel="stylesheet" href="style.css"> </head>
+    <link rel="stylesheet" href="admin_forget_pass.css">
+<body>
+    
+    <main>
+   <form id="forgotForm" class="auth-form">
+            <fieldset>
+                <legend>Reset Password</legend>
+                <p class="form-description">
+                    Enter the email address associated with your admin account. We will send you a link to reset your password.
+                </p>
+
+                <div class="form-group">
+                    <label for="email">Admin Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="admin@manit.ac.in" required>
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" value="Send Reset Link">
+                </div>
+            </fieldset>
+            
+            <div class="form-footer">
+                <a href="admin_login.html">Back to Login</a>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="js/common.js"></script>
+<script src="js/admin_forget_pass.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #0d1b2a;
+    color: #ffffff;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+nav {
+    background-color: #1b263b; 
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #e0e1dd; 
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin: 0 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: #415a77;
+    color: #ffffff;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+main h2 {
+    color: #0d1b2a;
+    font-size: 2em;
+    border-bottom: 2px solid #e0e1dd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    color: #1b263b;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+main span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px;
+    background-color: #f4f7f9;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e0e1dd;
+}
+
+
+main span hr, main span br {
+    display: none;
+}
+
+main span div {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    flex-grow: 1; 
+    min-width: 200px; 
+}
+
+main span div:nth-of-type(1) {
+    color: #005f73;
+    border-left: 5px solid #005f73;
+}
+
+main span div:nth-of-type(2) {
+    color: #0a9396;
+    border-left: 5px solid #0a9396;
+}
+
+main span div:nth-of-type(3) {
+    color: #ae2012;
+    border-left: 5px solid #ae2012;
+}
+#features{
+    margin-top:40px;
+    text-align:center;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.feature-card{
+    width:220px;
+    padding:20px;
+    border-radius:12px;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-5px);
+}
+
+.feature-card h3{
+    color:#1a4fb0;
+}
+
+footer {
+    background: #0d1b2a;
+    color: #e0e1dd;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}

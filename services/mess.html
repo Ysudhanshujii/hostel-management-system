@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Menu</title>
+    <link rel="stylesheet" href="mess.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>H-9 Mess Management</h1>
+    </header>
+
+    <main>
+
+        <!-- Weekly Menu -->
+
+        <section class="menu-card">
+
+            <h2>Weekly Mess Menu</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Day</th>
+                            <th>Breakfast</th>
+                            <th>Lunch</th>
+                            <th>Dinner</th>
+                        </tr>
+
+                    </thead>
+
+            <tbody id="weeklyMenu"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- Dashboard Grid -->
+
+        <div class="dashboard-grid">
+
+            <!-- Mess Timings -->
+
+            <section
+                class="card"
+                id="mess-stats">
+
+                <h2>Mess Timings</h2>
+
+                <div class="stats-list">
+
+                    <p>
+                        🍳 Breakfast :
+                        7:30 AM - 9:00 AM
+                    </p>
+
+                    <p>
+                        🍛 Lunch :
+                        12:30 PM - 2:00 PM
+                    </p>
+
+                    <p>
+                        🍽 Dinner :
+                        7:30 PM - 9:00 PM
+                    </p>
+
+                </div>
+
+            </section>
+            <section class="card">
+
+    <h2>Rate Today's Food</h2>
+
+    <select id="rating">
+
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+
+    </select>
+
+    <br><br>
+
+    <textarea
+        id="comment"
+        rows="4"
+        placeholder="Write your feedback..."
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="submitFeedback()">
+
+        Submit Feedback
+
+    </button>
+
+</section>
+
+<section class="card">
+
+    <h2>Recent Feedback</h2>
+
+    <div id="feedbackList">
+
+        Loading...
+
+    </div>
+
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 MANIT Hostel Management
+        </p>
+
+    </footer>
+<script src="../js/mess.js"></script>
+</body>
+
+</html>

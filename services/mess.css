@@ -1,0 +1,150 @@
+
+:root {
+    --primary-color: #c2410c; 
+    --bg-color: #fefce8;     
+    --card-bg: #ffffff;
+    --text-dark: #3f3f46;
+    --text-light: #71717a;
+    --border-color: #e4e4e7;
+    --highlight-bg: #fef9c3;  
+    --highlight-border: #facc15;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+}
+
+
+header {
+    background: var(--primary-color);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.card, .menu-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 25px var(--shadow-color);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+
+.table-wrapper {
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    white-space: nowrap;
+}
+
+thead th {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-light);
+    background-color: #fafafa;
+}
+
+td {
+    font-size: 0.95rem;
+}
+
+tbody tr:hover {
+    background-color: #fdfcf6;
+}
+
+
+.today {
+    background-color: var(--highlight-bg) !important;
+    border-left: 5px solid var(--highlight-border);
+    border-right: 5px solid var(--highlight-border);
+}
+
+.today strong {
+    color: var(--primary-color);
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+#mess-stats .stats-list p {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 0.5rem 0;
+}
+
+#mess-stats .stats-list i {
+    color: var(--primary-color);
+    margin-right: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+
+.feedback-item {
+    background-color: #fafaf9;
+    border-left: 4px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.feedback-item p {
+    margin: 0 0 0.5rem 0;
+    font-style: italic;
+}
+
+.feedback-item span {
+    font-weight: 700;
+    font-size: 0.9em;
+    color: var(--text-light);
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 0.9em;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Complaint</title>
+    <link rel="stylesheet" href="complaint.css">
+</head>
+<body>
+
+    <header>
+        <h1> Hostel Complaint Form </h1>
+    </header>
+
+    <main>
+       <form id="complaintForm">
+            <fieldset>
+                <legend>Complaint Details</legend>
+<br><br>
+                <label for="rollNo">Student Roll Number:</label><br>
+                <input type="text" id="rollNo" name="rollNo" placeholder=" " required><br><br>
+
+                <label for="roomNo">Room Number:</label><br>
+                <input type="text" id="roomNo" name="roomNo" placeholder=" " required><br><br>
+
+                <label for="category">Complaint Category:</label><br>
+                <select id="category" name="category" required>
+                    <option value="">-Select a Category-</option>
+                    <option value="Maintenance">Maintenance (Plumbing, Electrical, etc.)</option>
+                    <option value="Mess">Mess / Food Quality</option>
+                    <option value="Wifi">Internet / Wi-Fi</option>
+                    <option value="Security">Security</option>
+                    <option value="Housekeeping">Housekeeping / Cleanliness</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
+
+                <label for="description">Describe your issue in detail:</label><br>
+                <textarea id="description" name="description" rows="6" cols="50" required></textarea><br><br>
+<br><br>
+                <input type="submit" value="Submit Complaint">
+            </fieldset>
+        </form>
+        <hr>
+
+<section id="complaintSection">
+
+    <h2>Your Complaints</h2>
+
+    <div id="complaintList"></div>
+
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="../js/common.js"></script>
+<script src="../js/complaint.js"></script>
+</body>
+</html>

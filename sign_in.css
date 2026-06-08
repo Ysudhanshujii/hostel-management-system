@@ -1,0 +1,188 @@
+
+:root {
+    --primary-color: #3a7bd5; 
+    --gradient-start: #3a6073;
+    --gradient-end: #1e3c72;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --text-dark: #2c3e50;
+    --text-light: #8e9eab;
+    --border-color: #dcdfe6;
+    --white-color: #ffffff;
+    --shadow-color: rgba(44, 62, 80, 0.2);
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+header {
+    position: absolute;
+    top: 2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+footer {
+    position: absolute;
+    bottom: 1.5rem;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+
+main {
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px var(--shadow-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+fieldset {
+    border: none;
+    padding: 2.5rem;
+    margin: 0;
+}
+
+legend {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+
+form div {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #596a7a;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border-color);
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1em;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(58, 123, 213, 0.2);
+}
+
+input::placeholder {
+    color: var(--text-light);
+}
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.form-group-inline label {
+    margin: 0;
+    font-weight: 400;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e6cbb;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
+}
+
+.form-footer {
+    background-color: rgba(243, 244, 246, 0.7);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9em;
+    
+}
+
+.form-footer p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.form-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.form-footer p {
+    margin-top: 0.75rem;
+    color: aqua
+}

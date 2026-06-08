@@ -1,0 +1,121 @@
+:root {
+
+    --primary: #2563eb;
+    --background: #f4f7fb;
+    --card-bg: white;
+    --text: #333;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    background: var(--background);
+
+}
+
+header {
+
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+main {
+
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+
+}
+
+.card {
+
+    background: var(--card-bg);
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    color: var(--primary);
+
+}
+
+.form-group {
+
+    margin-bottom: 15px;
+
+}
+
+label {
+
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+
+}
+
+input,
+select {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+}
+
+.save-btn {
+
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.save-btn:hover {
+
+    opacity: 0.9;
+
+}
+
+.feedback-item {
+
+    background: #f8fafc;
+    padding: 15px;
+    border-left: 4px solid var(--primary);
+    margin-bottom: 15px;
+    border-radius: 6px;
+
+}
+
+.feedback-item p {
+
+    margin-bottom: 8px;
+
+}
+
+.feedback-item span {
+
+    color: #f59e0b;
+    font-weight: bold;
+
+}

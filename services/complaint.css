@@ -1,0 +1,219 @@
+
+:root {
+    --primary-color: #d97706;
+    --primary-hover: #b45309;
+    --bg-color: #f8fafc;     
+    --card-bg: #ffffff;
+    --text-dark: #1e293b;    
+    --text-light: #64748b;   
+    --border-color: #cbd5e1;  
+    --shadow-color: rgba(100, 116, 139, 0.1);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: var(--text-dark);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 0.9em;
+    margin-top: auto; 
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+form {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    width: 100%;
+    max-width: 700px;
+}
+
+fieldset {
+    border: none;
+    padding: 2.5rem;
+}
+
+legend {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.2);
+    background-color: var(--card-bg);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary-color);
+    color: var(--card-bg);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--primary-hover);
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+
+    fieldset {
+        padding: 1.5rem;
+    }
+}
+/* ======================================================
+   COMPLAINT CARDS
+====================================================== */
+
+#complaintSection {
+    margin-top: 40px;
+}
+
+.complaint-card {
+
+    background: #ffffff;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    border-left: 6px solid #ff9800;
+}
+
+.complaint-card h3 {
+
+    margin-top: 0;
+
+    color: #ff9800;
+}
+
+.status {
+
+    padding: 4px 10px;
+
+    border-radius: 6px;
+
+    background: #ffe0b2;
+
+    color: #e65100;
+
+    font-weight: bold;
+}
+.resolve-btn{
+
+    background: green;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+.pending{
+    color: orange;
+    font-weight: bold;
+}
+
+.resolved{
+    color: green;
+    font-weight: bold;
+}

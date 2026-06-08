@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <header>
+        <h1> MANIT Admin Dashboard </h1>
+    </header>
+
+
+    <main>
+       
+           <section id="quick-stats">
+    <h2>Quick Stats</h2>
+
+    <div class="stat-card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Available Rooms</h3>
+        <p id="availableRooms">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Occupied Rooms</h3>
+        <p id="occupiedRooms">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Pending Room Requests</h3>
+        <p id="pendingRequests">0</p>
+    </div>
+
+    <div class="stat-card">
+    <h3>Total Complaints</h3>
+    <p id="totalComplaints">0</p>
+</div>
+</section>
+       
+
+        <section id="recent-activity">
+            <h2>Recent Activity</h2>
+    <ul id="activityList"></ul>
+        </section>
+        
+      
+
+        <section id="quick-actions">
+            <h2>Quick Actions</h2>
+            <button onclick="window.location.href='registration.html'">Add New Student</button>
+            <button onclick="window.location.href='services/allocation.html'">Allocate a Room</button>
+            <button onclick="window.location.href='services/complaint.html'">View Complaints</button>
+          <button onclick="window.location.href='services/admin-mess.html'"> H-9 Mess</button>
+        </section>
+
+  <section id="dashboard">
+  <h2>Room Change Request Dashboard</h2>
+
+  <div class="chart-container">
+    <canvas id="statusChart"></canvas>
+  </div>
+  <section id="analytics">
+
+    <h2>Hostel Analytics</h2>
+
+    <div class="analytics-grid">
+
+        <div class="chart-card">
+
+            <h3>Room Occupancy</h3>
+
+            <canvas id="occupancyChart"></canvas>
+
+        </div>
+
+        <div class="chart-card">
+
+            <h3>Complaints Overview</h3>
+
+            <canvas id="complaintChart"></canvas>
+
+        </div>
+        <section id="complaints-section">
+
+    <h2>Complaint Management</h2>
+
+    <div id="dashboardComplaints"></div>
+
+</section>
+
+    </div>
+
+</section>
+</section>
+
+<section class="request-section">
+
+    <h2>Pending Room Change Requests</h2>
+
+    <div
+        id="requestList"
+        class="requests-container">
+    </div>
+
+</section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
+
+<script src="js/common.js"></script>
+<script>
+protectAdminPage();
+</script>
+<script src="js/dashboard.js"></script>
+
+
+</body>
+</html>

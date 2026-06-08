@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Change Request</title>
+    <link rel="stylesheet" href="change.css">
+</head>
+<body>
+
+    <header>
+        <h1>Room Change Request </h1>
+    </header>
+
+    <main>
+        <h3>Submit a Room Change Request</h3>
+     <form id="roomChangeForm">
+
+            <fieldset>
+                <legend>Request Details</legend>
+                <br><br>
+                <label for="rollNo">Student Roll Number:</label><br>
+                <input type="text" id="rollNo" name="rollNo" placeholder="STU102" required><br><br>
+
+                <label for="currentRoom">Current Room Number:</label><br>
+                <input type="text" id="currentRoom" name="currentRoom" placeholder=" 102" required><br><br>
+
+                <label for="desiredRoom">Desired New Room Number:</label><br>
+                <input type="text" id="desiredRoom" name="desiredRoom" placeholder=" 101" required><br><br>
+
+                <label for="reason">Reason for Change:</label><br>
+                <textarea id="reason" name="reason" rows="5" cols="50" placeholder="Please provide a detailed reason" required></textarea><br><br>
+<br><br>
+                <input type="submit" value="Submit Request">
+            </fieldset>
+        </form>
+<hr>
+
+<section id="requestSection">
+
+    <h2>Room Change Requests</h2>
+
+    <div id="requestList"></div>
+
+</section>
+        <hr>
+
+       
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="../js/room-change.js"></script>
+<script src="../js/common.js"></script>
+
+</body>
+</html>

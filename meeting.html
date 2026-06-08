@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Announcements</title>
+    <link rel="stylesheet" href="meeting.css">
+</head>
+<body>
+
+    <header>
+        <h1> Important Announcements </h1>
+    </header>
+
+
+<main>
+
+    <section id="meeting-details">
+
+        <h3>
+            Meeting: Warden, Mess Workers & Mess Committee
+        </h3>
+
+        <p>
+            <strong>Date:</strong>
+            27 May 2026
+        </p>
+
+        <p>
+            <strong>Attendees:</strong>
+            Mr. Rajeev Paramar (Warden),
+            Head Cook,
+            All Mess Staff
+        </p>
+
+    </section>
+
+    <hr>
+
+    <!-- ================= ADMIN PANEL ================= -->
+
+    <section id="admin-panel" class="admin-card">
+
+        <div class="admin-header">
+
+            <h3>Admin Panel</h3>
+
+            <span class="admin-badge">
+                Announcement Manager
+            </span>
+
+        </div>
+
+        <div class="admin-form">
+
+            <div class="form-group">
+
+                <label>Subject</label>
+
+                <input
+                    type="text"
+                    id="admin-subject"
+                    placeholder="Enter announcement subject"
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Announcement Points</label>
+
+                <textarea
+                    id="admin-points"
+                    rows="5"
+                    placeholder="Write each point in new line"
+                ></textarea>
+
+            </div>
+
+            <div class="form-actions">
+
+                <button
+                    id="saveAnnouncement"
+                    class="btn-save"
+                >
+                    Save Announcement
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <hr>
+
+    <!-- ================= DYNAMIC ANNOUNCEMENTS ================= -->
+
+    <section id="announcementSection">
+
+        <h2>Latest Announcements</h2>
+
+        <div id="announcementList"></div>
+
+    </section>
+
+    <hr>
+
+    <!-- ================= ACTION ITEMS ================= -->
+
+    <section id="action-items">
+
+        <h2>Action Items & Decisions</h2>
+
+        <table border="1"
+            style="width:100%; border-collapse: collapse;">
+
+            <thead>
+
+                <tr>
+
+                    <th>Task</th>
+
+                    <th>Responsible Person</th>
+
+                    <th>Deadline</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        Procure new stock of gloves and hairnets.
+                    </td>
+
+                    <td>Mess Manager</td>
+
+                    <td>30 May 2026</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Display the new menu on all notice boards.
+                    </td>
+
+                    <td>Head Cook</td>
+
+                    <td>28 May 2026</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+                        Conduct a deep cleaning of kitchen.
+                    </td>
+
+                    <td>All Mess Staff</td>
+
+                    <td>31 May 2026</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="js/meeting.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

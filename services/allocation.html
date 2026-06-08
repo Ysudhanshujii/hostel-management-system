@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation</title>
+    <link rel="stylesheet" href="allocation.css">
+</head>
+<body>
+
+    <header>
+        <h1> Room Allocation </h1>
+    </header>
+
+
+    <main>
+        <h2>Allocate Room to a Student</h2>
+     <form id="allocationForm">
+            <label for="studentId">Select Student (by Roll No.):</label><br>
+            <input type="text" id="studentId" name="studentId" required><br><br>
+            
+            <label for="roomNumber">Assign Room Number:</label><br>
+            <input type="text" id="roomNumber" name="roomNumber" required><br><br>
+
+            <input type="submit" value="Allocate Room">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management. All Rights Reserved.</p>
+    </footer>
+<script src="../js/common.js"></script>
+<script src="../js/allocation.js"></script>
+</body>
+</html>

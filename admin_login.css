@@ -1,0 +1,194 @@
+
+:root {
+    --primary-bg: #1a1c2c;        
+    --secondary-bg: #2a2d42;      
+    --accent-color: #00aaff;      
+    --text-primary: #f0f0f0;      
+    --text-secondary: #a0a0a0;    
+    --border-color: #40445c;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+footer {
+ 
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--text-secondary);
+    font-size: 0.85em;
+
+    flex-shrink: 0; 
+}
+
+
+main {
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+legend {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input::placeholder {
+    color: var(--text-secondary);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+
+div:has(> #rememberMe) {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+#rememberMe {
+    appearance: none;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#rememberMe:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+#rememberMe:checked::after {
+    content: '\2713';
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#rememberMe + label {
+    margin-bottom: 0;
+    font-size: 1em;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 1.5rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+    background: #0099e6;
+    transform: translateY(-2px);
+}
+
+
+form > p {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+form > p > a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+form > p > a:hover {
+    text-decoration: underline;
+}
+
+br {
+    display: none;
+}
+
+div {
+    margin-bottom: 1rem;
+}
+.final-status{
+    color:red !important;
+    font-size:30px !important;
+}
