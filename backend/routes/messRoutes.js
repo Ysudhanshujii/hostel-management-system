@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const Mess =
-require("../models/Mess");
+require("../models/mess");
 
 /* Get Menu */
 
