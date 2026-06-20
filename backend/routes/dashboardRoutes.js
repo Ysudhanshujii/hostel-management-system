@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Student = require("../models/Student");
+const Student = require("../models/student");
 const Room = require("../models/Room");
 const Complaint = require("../models/Complaint");
 const RoomRequest = require("../models/RoomRequest");
