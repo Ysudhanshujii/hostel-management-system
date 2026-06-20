@@ -59,6 +59,16 @@ async (req, res) => {
     });
 
 });
+router.get("/", async (req, res) => {
+
+    const rooms = await Room.find();
+
+    res.json({
+        success: true,
+        rooms
+    });
+
+});
 
 // UPDATE ROOM CHANGE REQUEST STATUS
 
