@@ -1,3 +1,4 @@
+const bcrypt = require("bcryptjs");
 const express = require("express");
 
 const router = express.Router();
@@ -52,8 +53,21 @@ router.post("/register", async (req, res) => {
 
         }
 
-        const student =
-            await Student.create(req.body);
+        const hashedPassword = await bcrypt.hash(req.body.password, 10);
+
+const student = await Student.create({
+
+    rollNo: req.body.rollNo,
+
+    studentName: req.body.studentName,
+
+    email: req.body.email,
+
+    branch: req.body.branch,
+
+    password: hashedPassword
+
+});
 
        
         res.json({
@@ -100,14 +114,19 @@ router.post("/student-login", async (req, res) => {
 
         }
 
-        if (student.password !== password) {
+      const isMatch = await bcrypt.compare(
+    password,
+    student.password
+);
 
-            return res.status(401).json({
-                success: false,
-                message: "Invalid Password"
-            });
+if (!isMatch) {
 
-        }
+    return res.status(401).json({
+        success: false,
+        message: "Invalid Password"
+    });
+
+}
 
         res.json({
             success: true,
