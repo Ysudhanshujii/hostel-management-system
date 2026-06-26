@@ -77,29 +77,57 @@ router.post("/register", async (req, res) => {
 
 });
 
+
+
 // STUDENT LOGIN
 
 router.post("/student-login", async (req, res) => {
 
-    const { scholar } = req.body;
+    try {
 
-    const student = await Student.findOne({
-        rollNo: scholar
-    });
+        const { scholar, password } = req.body;
 
-    if (!student) {
-        return res.status(404).json({
-            success: false,
-            message: "Student not found"
+        const student = await Student.findOne({
+            rollNo: scholar
         });
+
+        if (!student) {
+
+            return res.status(404).json({
+                success: false,
+                message: "Student not found"
+            });
+
+        }
+
+        if (student.password !== password) {
+
+            return res.status(401).json({
+                success: false,
+                message: "Invalid Password"
+            });
+
+        }
+
+        res.json({
+            success: true,
+            role: "student",
+            message: "Student Login Successful",
+            student
+        });
+
     }
 
-    res.json({
-        success: true,
-        role: "student",
-        message: "Student Login Successful",
-        student
-    });
+    catch (error) {
+
+        console.log(error);
+
+        res.status(500).json({
+            success: false,
+            message: "Server Error"
+        });
+
+    }
 
 });
 

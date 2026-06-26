@@ -15,9 +15,10 @@ const studentSchema = new mongoose.Schema({
 
     email: String,
 
-    branch: String,
-
-    password: String
+   password:{
+    type: String,
+    required:true
+   }
 
 });
 
