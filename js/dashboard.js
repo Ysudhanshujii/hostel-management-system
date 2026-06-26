@@ -1,3 +1,12 @@
+const role = localStorage.getItem("role");
+
+if (role !== "admin") {
+
+    alert("Unauthorized Access");
+
+    window.location.href = "index.html";
+
+}
 let chartInstance = null;
 let occupancyChart = null;
 
@@ -53,7 +62,7 @@ async function renderStatusChart() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/rooms/change-request"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request"
         );
 
         const data = await response.json();
@@ -142,7 +151,7 @@ async function loadRequests() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/rooms/change-request"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request"
         );
 
         const data = await response.json();
@@ -223,7 +232,7 @@ window.updateStatus = async function(id, status) {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/api/rooms/change-request/${id}`,
+            `https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request/${id}`,
             {
                 method: "PUT",
 
@@ -260,7 +269,7 @@ async function renderComplaintChart() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/complaints"
+                "https://hostel-management-system-h3xb.onrender.com/api/complaints"
             );
 
         const data =
@@ -342,7 +351,7 @@ async function loadDashboardComplaints() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/complaints"
+                "https://hostel-management-system-h3xb.onrender.com/api/complaints"
             );
 
         const data =
@@ -421,7 +430,7 @@ async function(id) {
 
         const response =
             await fetch(
-                `http://localhost:3000/api/complaints/${id}`,
+                `https://hostel-management-system-h3xb.onrender.com/api/complaints/${id}`,
                 {
                     method: "PUT",
 
@@ -463,7 +472,7 @@ async function renderOccupancyChart() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/rooms/all"
+                "https://hostel-management-system-h3xb.onrender.com/api/rooms/all"
             );
 
         const data =
@@ -536,14 +545,14 @@ async function loadStats() {
     try {
 
         const roomResponse = await fetch(
-            "http://localhost:3000/api/rooms/all"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/all"
         );
 
         const roomData =
             await roomResponse.json();
 
         const requestResponse = await fetch(
-            "http://localhost:3000/api/rooms/change-request"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request"
         );
 
         const requestData =
@@ -582,7 +591,7 @@ async function loadStats() {
         
 const complaintResponse =
     await fetch(
-        "http://localhost:3000/api/complaints"
+        "https://hostel-management-system-h3xb.onrender.com/api/complaints"
     );
 
 const complaintData =
@@ -608,7 +617,7 @@ async function loadQuickStats() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/dashboard/stats"
+                "https://hostel-management-system-h3xb.onrender.com/api/dashboard/stats"
             );
 
         const data =
@@ -661,7 +670,7 @@ async function loadActivityFeed() {
 
         const requestResponse =
             await fetch(
-                "http://localhost:3000/api/rooms/change-request"
+                "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request"
             );
 
         const requestData =

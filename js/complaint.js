@@ -41,7 +41,7 @@ if (complaintForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/complaints",
+                "https://hostel-management-system-h3xb.onrender.com/api/complaints",
                 {
                     method: "POST",
 
@@ -92,7 +92,7 @@ async function loadComplaints() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/complaints"
+            "https://hostel-management-system-h3xb.onrender.com/api/complaints"
         );
 
         const data = await response.json();

@@ -129,3 +129,24 @@ fieldset a:hover {
 br {
     display: none;
 }
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="password"]:focus {
+    border-color: #6f42c1;
+    box-shadow: 0 0 5px rgba(111, 66, 193, 0.3);
+}
+
+input[type="password"]::placeholder {
+    color: #999;
+}

@@ -31,7 +31,7 @@ async function loadAnnouncements() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/meetings"
+            "https://hostel-management-system-h3xb.onrender.com/api/meetings"
         );
 
         const data = await response.json();
@@ -92,7 +92,7 @@ if (saveBtn) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/meetings",
+                "https://hostel-management-system-h3xb.onrender.com/api/meetings",
                 {
                     method: "POST",
 

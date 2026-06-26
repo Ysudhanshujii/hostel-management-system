@@ -4,7 +4,7 @@ async function loadFeedback() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/feedback"
+                "https://hostel-management-system-h3xb.onrender.com/api/feedback"
             );
 
         const data =
@@ -63,7 +63,7 @@ window.saveMenu = async function() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/mess",
+                "https://hostel-management-system-h3xb.onrender.com/api/mess",
                 {
 
                     method: "PUT",

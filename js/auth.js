@@ -18,7 +18,7 @@ if (adminForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/auth/admin-login",
+                "https://hostel-management-system-h3xb.onrender.com/api/auth/admin-login",
                 {
                     method: "POST",
 
@@ -84,6 +84,8 @@ if (registrationForm) {
             email: document.getElementById("email").value,
 
             studentphone: document.getElementById("studentphone").value,
+            
+             password :document.getElementById("password").value,
 
             address: document.getElementById("address").value
 
@@ -91,9 +93,9 @@ if (registrationForm) {
 
         try {
 
-            const response = await fetch(
-                "http://localhost:3000/api/auth/register",
-                {
+            const response =   await fetch(
+                        "https://hostel-management-system-h3xb.onrender.com/api/auth/register",
+                        {
                     method: "POST",
 
                     headers: {
@@ -147,7 +149,7 @@ if (studentLoginForm) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/auth/student-login",
+                "https://hostel-management-system-h3xb.onrender.com/api/auth/student-login",
                 {
                     method: "POST",
 

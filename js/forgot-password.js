@@ -11,7 +11,7 @@ document
 
         const response =
             await fetch(
-                "http://localhost:3000/api/auth/forgot-password",
+                "https://hostel-management-system-h3xb.onrender.com/api/auth/forgot-password",
                 {
                     method: "POST",
 

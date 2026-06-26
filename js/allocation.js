@@ -39,7 +39,7 @@ form.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/rooms/allocate",
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/allocate",
             {
                 method: "POST",
 
@@ -83,7 +83,7 @@ async function loadRooms() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/rooms/all"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/all"
         );
 
         const data = await response.json();

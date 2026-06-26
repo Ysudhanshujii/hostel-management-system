@@ -39,7 +39,7 @@ if (form) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/rooms/change-request",
+                "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request",
                 {
                     method: "POST",
 
@@ -84,7 +84,7 @@ async function loadRequests() {
     try {
 
         const response = await fetch(
-            "http://localhost:3000/api/rooms/change-request"
+            "https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request"
         );
 
         const data = await response.json();
@@ -180,7 +180,7 @@ window.updateStatus = async function(id, status) {
     try {
 
         const response = await fetch(
-            `http://localhost:3000/api/rooms/change-request/${id}`,
+            `https://hostel-management-system-h3xb.onrender.com/api/rooms/change-request/${id}`,
             {
                 method: "PUT",
 

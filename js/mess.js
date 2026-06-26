@@ -19,7 +19,7 @@ async function loadMenu() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/mess"
+                "https://hostel-management-system-h3xb.onrender.com/api/mess"
             );
 
         const data =
@@ -73,7 +73,7 @@ window.submitFeedback = async function() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/feedback",
+                "https://hostel-management-system-h3xb.onrender.com/api/feedback",
                 {
                     method: "POST",
 
@@ -108,7 +108,7 @@ async function loadFeedback() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/feedback"
+                "https://hostel-management-system-h3xb.onrender.com/api/feedback"
             );
 
         const data =

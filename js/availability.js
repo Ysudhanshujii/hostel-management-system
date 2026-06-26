@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
 
            const response = await fetch(
-    "http://localhost:3000/api/rooms/all"
+    "https://hostel-management-system-h3xb.onrender.com/api/rooms/all"
 );
             const data = await response.json();
 
